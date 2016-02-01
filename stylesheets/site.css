@@ -1,0 +1,620 @@
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 8/9.
+ */
+/* line 11, _normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block; }
+
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+/* line 29, _normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 40, _normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+/* line 49, _normalize.scss */
+[hidden] {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 63, _normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */ }
+
+/*
+ * Removes default margin.
+ */
+/* line 73, _normalize.scss */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 85, _normalize.scss */
+a:focus {
+  outline: thin dotted; }
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+/* line 93, _normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */
+/* line 107, _normalize.scss */
+h1 {
+  font-size: 2em; }
+
+/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 115, _normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 123, _normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+/* line 132, _normalize.scss */
+dfn {
+  font-style: italic; }
+
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+/* line 140, _normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+/* line 150, _normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+/* line 162, _normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/*
+ * Sets consistent quote types.
+ */
+/* line 172, _normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+/* line 180, _normalize.scss */
+small {
+  font-size: 80%; }
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 188, _normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 196, _normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 200, _normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * Removes border when inside `a` element in IE 8/9.
+ */
+/* line 212, _normalize.scss */
+img {
+  border: 0; }
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+/* line 220, _normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+/* line 232, _normalize.scss */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Define consistent border, margin, and padding.
+ */
+/* line 244, _normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 255, _normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+/* line 266, _normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 280, _normalize.scss */
+button,
+input {
+  line-height: normal; }
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 293, _normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+/* line 305, _normalize.scss */
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+/* line 315, _normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 327, _normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 339, _normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+/* line 348, _normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+/* line 359, _normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+/* line 372, _normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 1, _devignis.scss */
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif; }
+
+/* line 9, _devignis.scss */
+.container {
+  height: 100%;
+  width: 100%;
+  background: #140025;
+  position: relative; }
+
+/* line 16, _devignis.scss */
+.hero-logo {
+  height: 100%;
+  width: 100%;
+  text-align: center; }
+
+/* line 22, _devignis.scss */
+.hero-logo #devignis-logo {
+  position: absolute;
+  top: 15%;
+  left: 15%; }
+
+/* line 28, _devignis.scss */
+.hero-logo .slogan {
+  top: 50%;
+  position: absolute;
+  right: 0;
+  left: 0; }
+
+/* line 35, _devignis.scss */
+.hero-logo .slogan h3 {
+  color: #fff;
+  font-size: 1.6em;
+  font-weight: 300;
+  font-style: italic; }
+
+/* line 42, _devignis.scss */
+.page-name {
+  height: auto;
+  top: 10%;
+  position: absolute;
+  width: 100%;
+  text-align: center; }
+
+/* line 49, _devignis.scss */
+.page-name #logo-name {
+  height: 50px; }
+
+/*social icons*/
+/* line 54, _devignis.scss */
+.social-links {
+  text-align: center;
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+  left: 0; }
+
+/* line 61, _devignis.scss */
+.social-links ul {
+  display: block;
+  padding: 0; }
+
+/* line 66, _devignis.scss */
+.social-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+  cursor: pointer; }
+
+/* line 73, _devignis.scss */
+.icon-social {
+  height: 40px; }
+
+/* line 77, _devignis.scss */
+#icon-social-path {
+  transition: 1s; }
+
+/* line 81, _devignis.scss */
+svg:hover #icon-social-path {
+  fill: #E21C37; }
+
+/* line 85, _devignis.scss */
+.st16 {
+  fill: #fff; }
+
+/* line 1, _dropdown.scss */
+.custom-dropdown--large {
+  font-size: 1.5em; }
+
+/* line 5, _dropdown.scss */
+.custom-dropdown--small {
+  font-size: .7em; }
+
+/* line 9, _dropdown.scss */
+.custom-dropdown__select {
+  font-size: inherit;
+  /* inherit size from .custom-dropdown */
+  padding: .5em;
+  /* add some space*/
+  margin: 0;
+  /* remove default margins */ }
+
+/* line 15, _dropdown.scss */
+.custom-dropdown__select--white {
+  background-color: #fff;
+  color: #444; }
+
+@supports (pointer-events: none) and ((-webkit-appearance: none) or (-moz-appearance: none) or (appearance: none)) {
+  /* line 25, _dropdown.scss */
+  .custom-dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle; }
+
+  /* line 31, _dropdown.scss */
+  .custom-dropdown__select {
+    padding-right: 2.5em;
+    /* accommodate with the pseudo elements for the dropdown arrow */
+    border: 0;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+
+  /* line 40, _dropdown.scss */
+  .custom-dropdown::before,
+  .custom-dropdown::after {
+    content: "";
+    position: absolute;
+    pointer-events: none; }
+
+  /* line 47, _dropdown.scss */
+  .custom-dropdown::after {
+    /*  Custom dropdown arrow */
+    content: "\25BC";
+    height: 1em;
+    font-size: .625em;
+    line-height: 1;
+    right: 1.2em;
+    top: 50%;
+    margin-top: -.5em; }
+
+  /* line 56, _dropdown.scss */
+  .custom-dropdown::before {
+    /*  Custom dropdown arrow cover */
+    width: 2em;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 0 3px 3px 0; }
+
+  /* line 62, _dropdown.scss */
+  .custom-dropdown__select[disabled] {
+    color: rgba(0, 0, 0, 0.3); }
+
+  /* line 66, _dropdown.scss */
+  .custom-dropdown.custom-dropdown--disabled::after {
+    color: rgba(0, 0, 0, 0.1); }
+
+  /* White dropdown style */
+  /* line 71, _dropdown.scss */
+  .custom-dropdown--white::before {
+    background-color: #fff;
+    border-left: 1px solid rgba(0, 0, 0, 0.1); }
+
+  /* line 76, _dropdown.scss */
+  .custom-dropdown--white::after {
+    color: rgba(0, 0, 0, 0.9); }
+
+  /* FF only temp fix */
+  @-moz-document url-prefix() {
+    /* line 82, _dropdown.scss */
+    .custom-dropdown__select {
+      padding-right: 0.9em; }
+
+    /* line 83, _dropdown.scss */
+    .custom-dropdown--large .custom-dropdown__select {
+      padding-right: 1.3em; }
+
+    /* line 84, _dropdown.scss */
+    .custom-dropdown--small .custom-dropdown__select {
+      padding-right: 0.5em; } } }
+/* line 6, site.css.scss */
+svg {
+  height: 100%;
+  width: 100%; }
+
+/* line 10, site.css.scss */
+.st0 {
+  fill: #7C101E;
+  stroke: #7C101E; }
+
+/* line 11, site.css.scss */
+.st1 {
+  fill: url(#XMLID_4_);
+  stroke: url(#XMLID_5_); }
+
+/* line 12, site.css.scss */
+.st2 {
+  fill: #6B0D1A;
+  stroke: #6B0D1A; }
+
+/* line 13, site.css.scss */
+.st3 {
+  fill: #A71428;
+  stroke: #A71428; }
+
+/* line 14, site.css.scss */
+.st4 {
+  fill: #7D101F;
+  stroke: #7D101F; }
+
+/* line 15, site.css.scss */
+.st5 {
+  fill: url(#XMLID_6_);
+  stroke: url(#XMLID_7_); }
+
+/* line 16, site.css.scss */
+.st6 {
+  fill: url(#XMLID_11_);
+  stroke: url(#XMLID_12_); }
+
+/* line 17, site.css.scss */
+.st7 {
+  fill: #CA1D39;
+  stroke: #CA1D39; }
+
+/* line 18, site.css.scss */
+.st8 {
+  fill: url(#XMLID_13_);
+  stroke: url(#XMLID_14_); }
+
+/* line 19, site.css.scss */
+.st9 {
+  fill: #B1162B;
+  stroke: #B1162B; }
+
+/* line 20, site.css.scss */
+.st10 {
+  fill: #A21427;
+  stroke: #A21427; }
+
+/* line 21, site.css.scss */
+.st11 {
+  fill: #CD1D39;
+  stroke: #CD1D39; }
+
+/* line 22, site.css.scss */
+.st12 {
+  fill: #AC152A;
+  stroke: #AC152A; }
+
+/* line 23, site.css.scss */
+.st13 {
+  fill: url(#XMLID_15_);
+  stroke: url(#XMLID_17_); }
+
+/* line 24, site.css.scss */
+.st14 {
+  fill: url(#XMLID_18_);
+  stroke: url(#XMLID_24_); }
+
+/* line 25, site.css.scss */
+.st15 {
+  fill: #E21C37;
+  stroke: #E21C37; }
